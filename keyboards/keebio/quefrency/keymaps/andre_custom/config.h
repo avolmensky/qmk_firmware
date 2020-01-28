@@ -25,3 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #define USE_SERIAL
 #define USE_I2C
+
+
+// Use Tap Dancing
+#define TAPPING_TERM 200
