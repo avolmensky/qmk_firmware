@@ -324,7 +324,7 @@ bool process_record_quantum(keyrecord_t *record) {
              */
             static bool grave_esc_was_shifted = false;
 
-            uint8_t shifted = get_mods() & ((MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_LGUI) | MOD_BIT(KC_RGUI)));
+            uint8_t shifted = get_mods() & ((MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT) | MOD_BIT(KC_LGUI) | MOD_BIT(KC_RGUI) | MOD_BIT(KC_LCTL) | MOD_BIT(KC_RCTL)));
 
 #ifdef GRAVE_ESC_ALT_OVERRIDE
             // if ALT is pressed, ESC is always sent
